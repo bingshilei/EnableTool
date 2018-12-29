@@ -1,0 +1,194 @@
+/*菜单栏样式设置开始-menu*/
+#menubar {
+	background-color: rgb(240, 240, 255);
+    width:80%;
+    padding-left:100px;
+	font: 15pt;	
+}
+/*上下左右边距*/
+#menubar::item {
+    padding: 10px 30px;
+}
+/*鼠标悬停背景颜色*/
+#menubar::item:hover {
+    background-color: rgb(69, 70, 71);
+}
+/*选中效果*/
+#menubar::item:selected, #menubar::item:pressed {
+    color: white;
+    background-color: rgb(36, 175, 255);
+}
+
+/*菜单栏中弹出的菜单*/
+#menubar > QMenu {
+    color: rgb(165, 165, 165);
+    background-color: rgb(60, 61, 65);
+}
+/*菜单中的分割线*/
+#menubar > QMenu::separator {
+    height: 2px;
+    background-color: rgb(45, 46, 48);
+}
+
+/*菜单子项样式设置*/
+#menubar > QMenu::item {
+    padding: 10px 20px;
+}
+/*菜单子项被选中样式设置*/
+#menubar > QMenu::item:selected {
+    color: white;
+	background-color: rgb(255, 69, 0);
+}
+/*菜单子项被按下样式设置*/
+#menubar > QMenu::item:pressed {
+    color: rgb(220, 220, 220);
+    background-color: rgb(27, 170, 250);
+}
+
+/*TAB样式设置*/
+QTabBar::tab:top {
+    color: #eff0f1;
+    border: 1px solid #76797C;
+    border-bottom: 1px transparent black;
+    background-color: #31363b;
+    padding: 5px;
+    min-width: 50px;
+}
+/*鼠标选择TAB样式设置*/
+QTabBar::tab:top:selected {
+    color: #eff0f1;
+    background-color:#236fd5 ;
+    border: 1px solid #76797C;
+    border-bottom: 2px solid red;
+}
+/*鼠标滑过TAB样式设置*/
+QTabBar::tab:top:hover{
+    background-color:red;
+}
+/*菜单栏样式设置结束-menu*/
+
+/*公式显示框样式设置开始-CallBaseTitleWidget*/
+#BaseTitleWidget {
+    border: 1px solid red;
+    background-color: white;
+}
+/*标题栏公式文字*/
+#labelTitle,#labelIcon {
+    font-weight: bold;
+	font: 14px "微软雅黑";
+}
+/*标题栏右侧工具按钮*/
+#buttonClose {
+    color: rgb(165, 165, 165);
+    border: none;
+    font-size: 12pt;
+    font-family: "Webdings";
+}
+#labelNotice{
+	font-family:  "Webdings";
+	font-size: 20pt;
+	font-weight: bold;
+	color: rgb(103, 194, 58);
+}
+#buttonClose:hover{
+	color: white;
+    background-color: rgb(200, 80, 80);
+}
+#buttonClose:pressed {
+    background-color: rgb(48, 49, 50);
+}
+/*公式显示框样式设置结束-CallBaseTitleWidget*/
+
+/*债券回购样式设置开始-CallBondHG*/
+#btnCalculate,#btnClear,#btnInit,#btnExport{
+        border-radius: 4px;
+        border: none;
+        background: rgb(120, 170, 220);
+        color: white;
+        width: 75px;
+        height: 25px;
+}
+#btnCalculate:hover,#btnClear:hover,#btnInit:hover,#btnExport:hover{
+        background: red;
+}
+#btnCalculate:pressed,#btnClear:pressed,#btnInit:pressed,#btnExport:pressed{
+        background: rgb(0, 78, 161);
+}
+/*表格QSS样式开始*/
+QTableView {
+	font: 10pt;
+	color:#000000;
+    border: 1px solid #76797C;
+    gridline-color: #31363b;
+    background-color: #ffffff;
+}
+QHeaderView::section {
+    background-color: skyblue;
+    color:rgb(102,102,102);
+	 border: 1px solid #76797C;
+    padding: 5px; 
+    font-size:14px  
+}
+QHeaderView::section::vertical::first,
+QHeaderView::section::vertical::only-one {
+    border-top: 1px solid #76797C;
+}
+QHeaderView::section::vertical {
+    border-top: transparent;
+}
+
+QHeaderView::section::first{
+	background-color: rgb(255, 85, 0);
+	font:  10pt "Microsoft YaHei";
+	
+}
+
+QTableCornerButton::section {
+    background-color: #f3f3f3;
+}
+/*表格样式结束*/
+/*QComBox样式开始*/
+QComboBox {  
+	height: 25px;
+    border: 1px solid rgb(111, 156, 207);
+    background: white;
+}
+/*QComBox样式结束*/
+/*QSpinBox样式开始*/
+QSpinBox,QDoubleSpinBox{
+        height: 24px;
+        border: 1px solid rgb(111, 156, 207);
+        background: white;
+}
+
+QSpinBox:enabled:hover, QSpinBox:enabled:focus {
+        color: rgb(51, 51, 51);
+}
+/*QSpinBox样式结束*/
+
+
+/*修复下拉框的项显示不全*/
+QComboBox:enabled {
+color: rgb(0, 0, 0);
+}
+QSpinBox::up-button ,QSpinBox::down-button{
+
+width: 20px; 
+}
+/*QDoubleSpinBox显示右边图标，且控制大小*/
+QDoubleSpinBox::up-button ,QDoubleSpinBox::down-button{
+
+width: 20px; 
+}
+
+/*债券回购样式设置结束-CallBondHG*/
+
+/*公式样式设置结束-Callgongshi*/
+#gongshiWidget > QTableWidget >  QHeaderView::section {
+    background-color: rgb(255,127,0);
+    color:rgb(FF,45,00);
+	border: 1px solid #76797C;
+    padding: 10px; 
+    font-size:15px  
+}
+/*gongshi样式设置结束-Callgongshi*/

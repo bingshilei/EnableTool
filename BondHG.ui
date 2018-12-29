@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EnableTool</class>
+ <widget class="QMainWindow" name="EnableTool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1284</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>质押回购</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ICON.qrc">
+    <normaloff>:/En/En.ico</normaloff>:/En/En.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0" colspan="4">
+     <widget class="QTableWidget" name="tableWidgetAsset">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>145</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>23</number>
+      </attribute>
+      <attribute name="verticalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>20</number>
+      </attribute>
+      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>初始状态</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>计算后状态</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>系统初始化后状态</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>资产变化</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>业务品种</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>委托方向</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>证券代码</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>委托数量</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>委托价格</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>交易费率</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>委托状态</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>资金资产</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>证券资产</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>回购资产</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>应收</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>应付</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>总资产</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>净值</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>产品份额</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>单位净值</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>初始状态</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="0" column="8">
+       <property name="text">
+        <string>1000000.00</string>
+       </property>
+      </item>
+      <item row="0" column="9">
+       <property name="text">
+        <string>1000000.00</string>
+       </property>
+      </item>
+      <item row="0" column="10">
+       <property name="text">
+        <string>0.00</string>
+       </property>
+      </item>
+      <item row="0" column="11">
+       <property name="text">
+        <string>0.00</string>
+       </property>
+      </item>
+      <item row="0" column="12">
+       <property name="text">
+        <string>0.00</string>
+       </property>
+      </item>
+      <item row="0" column="13">
+       <property name="text">
+        <string>1000000.00</string>
+       </property>
+      </item>
+      <item row="0" column="14">
+       <property name="text">
+        <string>1000000.00</string>
+       </property>
+      </item>
+      <item row="0" column="15">
+       <property name="text">
+        <string>1000000.00</string>
+       </property>
+      </item>
+      <item row="0" column="16">
+       <property name="text">
+        <string>1.00</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>计算后状态</string>
+       </property>
+      </item>
+      <item row="1" column="4">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>初始化后状态</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>54</width>
+        <height>12</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" rowspan="2" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>305</width>
+          <height>215</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>输入参数</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout" columnstretch="1,4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="c_stock_type">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>126</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>21</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <item>
+            <property name="text">
+             <string>债券回购</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>委托方向：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="c_entrust_direction">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>融资回购</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>融券回购</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>证券代码：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>业务品种：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>委托数量：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="c_entrust_price">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="value">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>委托状态：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="c_entrust_amount">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="accelerated">
+            <bool>false</bool>
+           </property>
+           <property name="minimum">
+            <number>100</number>
+           </property>
+           <property name="maximum">
+            <number>1000000</number>
+           </property>
+           <property name="singleStep">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>100</number>
+           </property>
+           <property name="displayIntegerBase">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QComboBox" name="c_entrust_status">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>已报</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>已成</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>委托价格：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QDoubleSpinBox" name="c_bond_interest">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="decimals">
+            <number>6</number>
+           </property>
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.000001000000000</double>
+           </property>
+           <property name="value">
+            <double>0.000056000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="l_stock">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 170, 255);</string>
+           </property>
+           <property name="text">
+            <string>131810</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>交易费率：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+        <zorder>c_bond_interest</zorder>
+        <zorder>label_15</zorder>
+        <zorder>c_entrust_amount</zorder>
+        <zorder>label_14</zorder>
+        <zorder>label_11</zorder>
+        <zorder>label_13</zorder>
+        <zorder>label_10</zorder>
+        <zorder>c_stock_type</zorder>
+        <zorder>c_entrust_direction</zorder>
+        <zorder>c_entrust_price</zorder>
+        <zorder>label_2</zorder>
+        <zorder>l_stock</zorder>
+        <zorder>c_entrust_status</zorder>
+        <zorder>label_12</zorder>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>13</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>142</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>功能函数</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3" columnstretch="1">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="btnExport">
+             <property name="maximumSize">
+              <size>
+               <width>107</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>导出</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="btnCalculate">
+             <property name="maximumSize">
+              <size>
+               <width>107</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>计算</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="btnClear">
+             <property name="maximumSize">
+              <size>
+               <width>107</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>清空</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="btnInit">
+             <property name="maximumSize">
+              <size>
+               <width>107</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>系统初始化</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>10</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="2" rowspan="2">
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>10</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="3" rowspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTableWidget" name="tableWidgetCurrent">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>123</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>23</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>23</number>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderMinimumSectionSize">
+         <number>20</number>
+        </attribute>
+        <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>初始状态</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>计算后状态</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>系统初始化后状态</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>资金变化</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>业务品种</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托方向</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>证券代码</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托价格</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>交易费率</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托状态</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>交易费</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>当前现金余额</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>T+0可用金额</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>T+1可用金额</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>冻结金额</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>解冻金额</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>初始状态</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item row="0" column="8">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item row="0" column="9">
+         <property name="text">
+          <string>1000000.00</string>
+         </property>
+        </item>
+        <item row="0" column="10">
+         <property name="text">
+          <string>1000000.00</string>
+         </property>
+        </item>
+        <item row="0" column="11">
+         <property name="text">
+          <string>1000000.00</string>
+         </property>
+        </item>
+        <item row="0" column="12">
+         <property name="text">
+          <string>0.00</string>
+         </property>
+        </item>
+        <item row="0" column="13">
+         <property name="text">
+          <string>0.00</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>计算后状态</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>初始化后状态</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>13</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidgetStock">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>123</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>23</number>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>初始状态</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>计算后状态</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>系统初始化后状态</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>持仓变化</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>业务品种</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托方向</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>证券代码</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托价格</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>交易费率</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托状态</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>当前持仓数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>可用数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>冻结数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>解冻数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>成本价</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>成本</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>含费用成本</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>初始状态</string>
+         </property>
+        </item>
+        <item row="0" column="8">
+         <property name="text">
+          <string>10000</string>
+         </property>
+        </item>
+        <item row="0" column="9">
+         <property name="text">
+          <string>10000</string>
+         </property>
+        </item>
+        <item row="0" column="10">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item row="0" column="11">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item row="0" column="12">
+         <property name="text">
+          <string>100</string>
+         </property>
+        </item>
+        <item row="0" column="13">
+         <property name="text">
+          <string>1000000</string>
+         </property>
+        </item>
+        <item row="0" column="14">
+         <property name="text">
+          <string>1000000</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>计算后状态</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>初始化后状态</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidgetStandard">
+        <property name="minimumSize">
+         <size>
+          <width>919</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>116</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>23</number>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>初始状态</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>计算后状态</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>系统初始化后状态</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>标准券变化</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>业务品种</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托方向</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>证券代码</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托价格</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>交易费率</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>委托状态</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>当前持仓数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>可用数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>冻结数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>解冻数量</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>成本价</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>成本</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>含费用成本</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>初始状态</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item row="0" column="8">
+         <property name="text">
+          <string>10000</string>
+         </property>
+        </item>
+        <item row="0" column="9">
+         <property name="text">
+          <string>10000</string>
+         </property>
+        </item>
+        <item row="0" column="10">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item row="0" column="11">
+         <property name="text">
+          <string>10000</string>
+         </property>
+        </item>
+        <item row="0" column="12">
+         <property name="text">
+          <string>100</string>
+         </property>
+        </item>
+        <item row="0" column="13">
+         <property name="text">
+          <string>1000000</string>
+         </property>
+        </item>
+        <item row="0" column="14">
+         <property name="text">
+          <string>1000000</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>计算后状态</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>初始化后状态</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ICON.qrc"/>
+ </resources>
+ <connections/>
+</ui>

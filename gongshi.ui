@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gongshi</class>
+ <widget class="QMainWindow" name="gongshi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1284</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>21</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>计算日志</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ICON.qrc">
+    <normaloff>:/En/En.ico</normaloff>:/En/En.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="gongshiWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="gstableWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>90</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>26</number>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>28</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>25</number>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>资产变化</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>资金变化</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>证券变化</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>因子类别</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>因素</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>计算公式</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>资产变化</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>现金资产</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>期初现金余额+当天业务处理资金变化部分＋手工调整部分
+</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>证券资产</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>最新价*持仓数量</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>应收</string>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="text">
+        <string>表示应收科目余额的合计</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>应付</string>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string>表示应付科目余额的合计</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>总资产</string>
+       </property>
+      </item>
+      <item row="4" column="2">
+       <property name="text">
+        <string>当前资金余额+合计应收金额+股票资产+债券资产+基金资产+回购资产+权证资产+其他资产+期货盈亏+期权资产+应收证券资产+应付债券资产</string>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string>净值</string>
+       </property>
+      </item>
+      <item row="5" column="2">
+       <property name="text">
+        <string>当前现金余额 - 合计应付 + 合计应收 + 股票资产 + 债券资产+ 基金资产 + 回购资产 + 权证资产 + 其它资产 +　期货盈亏＋应收证券资产－应付证券资产＋期权资产</string>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item row="6" column="1">
+       <property name="text">
+        <string>产品份额</string>
+       </property>
+      </item>
+      <item row="6" column="2">
+       <property name="text">
+        <string>产品成立之初建立的份额</string>
+       </property>
+      </item>
+      <item row="7" column="1">
+       <property name="text">
+        <string>单位净值</string>
+       </property>
+      </item>
+      <item row="7" column="2">
+       <property name="text">
+        <string>产品净资产/产品份额</string>
+       </property>
+      </item>
+      <item row="8" column="0">
+       <property name="text">
+        <string>资金变化</string>
+       </property>
+      </item>
+      <item row="8" column="1">
+       <property name="text">
+        <string>交易费
+</string>
+       </property>
+      </item>
+      <item row="8" column="2">
+       <property name="text">
+        <string>成交金额*费率</string>
+       </property>
+      </item>
+      <item row="9" column="1">
+       <property name="text">
+        <string>当前现金余额
+</string>
+       </property>
+      </item>
+      <item row="9" column="2">
+       <property name="text">
+        <string>期初现金余额+当天业务处理资金变化部分＋手工调整部分</string>
+       </property>
+      </item>
+      <item row="10" column="1">
+       <property name="text">
+        <string>T+0可用金额</string>
+       </property>
+      </item>
+      <item row="10" column="2">
+       <property name="text">
+        <string> 当前金额-冻结金额+解冻金额+Min{T+1变化-T+1冻结金额-指令占用,0}</string>
+       </property>
+      </item>
+      <item row="11" column="1">
+       <property name="text">
+        <string>T+1可用金额</string>
+       </property>
+      </item>
+      <item row="11" column="2">
+       <property name="text">
+        <string> 当前金额-冻结金额+解冻金额+T+1变化-T+1冻结金额-指令占用</string>
+       </property>
+      </item>
+      <item row="12" column="1">
+       <property name="text">
+        <string>冻结金额
+</string>
+       </property>
+      </item>
+      <item row="12" column="2">
+       <property name="text">
+        <string>将要流还未流出的资金</string>
+       </property>
+      </item>
+      <item row="13" column="1">
+       <property name="text">
+        <string>解冻金额</string>
+       </property>
+      </item>
+      <item row="13" column="2">
+       <property name="text">
+        <string>将要进还未进的资金</string>
+       </property>
+      </item>
+      <item row="14" column="0">
+       <property name="text">
+        <string>证券变化</string>
+       </property>
+      </item>
+      <item row="14" column="1">
+       <property name="text">
+        <string>当前持仓数量
+</string>
+       </property>
+      </item>
+      <item row="14" column="2">
+       <property name="text">
+        <string>当前持仓数量</string>
+       </property>
+      </item>
+      <item row="15" column="1">
+       <property name="text">
+        <string>可用数量
+</string>
+       </property>
+      </item>
+      <item row="15" column="2">
+       <property name="text">
+        <string>当前数量-冻结数量+解冻数量+买抵扣数量+买锁定数量+min{T+1变化-T+1冻结数量,0}</string>
+       </property>
+      </item>
+      <item row="16" column="1">
+       <property name="text">
+        <string>冻结数量
+</string>
+       </property>
+      </item>
+      <item row="16" column="2">
+       <property name="text">
+        <string>将要流还未流出的持仓</string>
+       </property>
+      </item>
+      <item row="17" column="1">
+       <property name="text">
+        <string>解冻数量
+</string>
+       </property>
+      </item>
+      <item row="17" column="2">
+       <property name="text">
+        <string>将要进还未进的持仓</string>
+       </property>
+      </item>
+      <item row="18" column="1">
+       <property name="text">
+        <string>成本价
+</string>
+       </property>
+      </item>
+      <item row="18" column="2">
+       <property name="text">
+        <string>当前数量+卖出数量=0，成本价=0；当前数量+卖出数量&lt;&gt;0成本价=成本/（当前数量+卖出数量）</string>
+       </property>
+      </item>
+      <item row="19" column="1">
+       <property name="text">
+        <string>成本
+</string>
+       </property>
+      </item>
+      <item row="19" column="2">
+       <property name="text">
+        <string>当前数量+卖出数量=0，为0；当前数量+卖出数量&lt;&gt;0，=当前数量 *　成本价</string>
+       </property>
+      </item>
+      <item row="20" column="1">
+       <property name="text">
+        <string>含费用成本
+</string>
+       </property>
+      </item>
+      <item row="20" column="2">
+       <property name="text">
+        <string>结转过含费用的期初成本+买入金额+实际当日买入费用</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ICON.qrc"/>
+ </resources>
+ <connections/>
+</ui>

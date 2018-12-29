@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-5.1.dtd">
+<!-- eric project file for project EnableTool -->
+<!-- Saved: 2018-12-28, 00:10:23 -->
+<!-- Copyright (C) 2018 ,  -->
+<Project version="5.1">
+  <Language></Language>
+  <Hash>99465156d16adae7573d0b29bbcc5c41661e8854</Hash>
+  <ProgLanguage mixed="0">Python3</ProgLanguage>
+  <ProjectType>PyQt5</ProjectType>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Eol index="0"/>
+  <Sources>
+    <Source>CallBaseTitleWidget.py</Source>
+    <Source>CallBondHG.py</Source>
+    <Source>CallBondPledge.py</Source>
+    <Source>CallCalcLog.py</Source>
+    <Source>CallEnableTest.py</Source>
+    <Source>CallShareTrade.py</Source>
+    <Source>CallUiAbout.py</Source>
+    <Source>Callgongshi.py</Source>
+    <Source>Default.qss</Source>
+    <Source>ICON_rc.py</Source>
+    <Source>Log.py</Source>
+    <Source>Ui_BaseTitleWidget.py</Source>
+    <Source>Ui_BondHG.py</Source>
+    <Source>Ui_BondPledge.py</Source>
+    <Source>Ui_CWidget.py</Source>
+    <Source>Ui_CalcLog.py</Source>
+    <Source>Ui_EnableTest.py</Source>
+    <Source>Ui_ShareTrade.py</Source>
+    <Source>Ui_about.py</Source>
+    <Source>Ui_gongshi.py</Source>
+    <Source>Ui_menu.py</Source>
+    <Source>__init__.py</Source>
+    <Source>demo.py</Source>
+    <Source>menu.py</Source>
+  </Sources>
+  <Forms>
+    <Form>BaseTitleWidget.ui</Form>
+    <Form>BondHG.ui</Form>
+    <Form>BondPledge.ui</Form>
+    <Form>CalcLog.ui</Form>
+    <Form>EnableTest.ui</Form>
+    <Form>ShareTrade.ui</Form>
+    <Form>about.ui</Form>
+    <Form>gongshi.ui</Form>
+    <Form>menu.ui</Form>
+  </Forms>
+  <Translations/>
+  <Resources>
+    <Resource>ICON.qrc</Resource>
+  </Resources>
+  <Interfaces/>
+  <Others/>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.e4p" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
+    <FiletypeAssociation pattern="*.md" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.py" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.py3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES"/>
+    <FiletypeAssociation pattern="*.rst" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.txt" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ui" type="FORMS"/>
+    <FiletypeAssociation pattern="README" type="OTHERS"/>
+    <FiletypeAssociation pattern="README.*" type="OTHERS"/>
+  </FiletypeAssociations>
+</Project>
